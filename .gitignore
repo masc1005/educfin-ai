@@ -15,7 +15,7 @@ target/
 .factorypath
 .sts4-cache/
 bin/
-out/
+/out/
 
 ### Env ###
 .env

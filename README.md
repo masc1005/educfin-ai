@@ -1,6 +1,6 @@
 # educfin-ai
 
-Boilerplate de **autenticação** com **Java 21 + Spring Boot 3.5**, organizado em **Clean Architecture** e seguindo os princípios **SOLID**.
+Boilerplate de **autenticação** com **Java 25 + Spring Boot 4.1**, organizado em **Clean Architecture** e seguindo os princípios **SOLID**.
 
 Funcionalidades:
 
@@ -14,20 +14,20 @@ Funcionalidades:
 
 ## Como rodar
 
-Pré-requisitos: **Java 21** e **Docker**.
+Pré-requisitos: **Java 25** e **Docker**.
 
 ```bash
 cp .env.example .env            # opcional: ajuste as variáveis
 docker compose up -d            # sobe o PostgreSQL
 ./mvnw spring-boot:run          # sobe a API em http://localhost:8080
-./mvnw test                     # roda os 94 testes (usa Docker para o Testcontainers)
+./mvnw test                     # roda os testes (usa Docker para o Testcontainers)
 ```
 
 - Swagger UI: http://localhost:8080/swagger-ui.html
 - Health: http://localhost:8080/actuator/health
 
 > Sem Java instalado? Dá para compilar via Docker:
-> `docker run --rm -v "$PWD":/app -w /app maven:3.9-eclipse-temurin-21 mvn package`
+> `docker run --rm -v "$PWD":/app -w /app maven:3.9-eclipse-temurin-25 mvn package`
 
 ### Variáveis de ambiente
 
